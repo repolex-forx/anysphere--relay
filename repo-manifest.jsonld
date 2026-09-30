@@ -1,0 +1,15 @@
+{
+  "@context": "https://repolex.ai/ontology/jsonld-context/repolex-context.jsonld",
+  "@id": "https://repolex.ai/r/anysphere/relay",
+  "@type": "gh:Repository",
+  "gh:name": "relay",
+  "gh:owner": "anysphere",
+  "repolex:trackedCommit": [
+    {
+      "@id": "https://repolex.ai/r/anysphere/relay/commit/d4d4a7ae743926d62b6c2008741d8d91573ce560",
+      "git:hexsha": "d4d4a7ae743926d62b6c2008741d8d91573ce560",
+      "repolex:parseStatus": "metadata_complete",
+      "git:tagName": "master"
+    }
+  ]
+}
