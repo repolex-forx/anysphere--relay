@@ -1,0 +1,122 @@
+[2026-10-01T07:18:57Z] === ENRICH ITERATION 1 START | repo=anysphere/relay sha=d4d4a7ae ===
+[2026-10-01T07:18:57Z] [iter=1] PHASE START: enrich repo=anysphere/relay sha=d4d4a7ae runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/d4d4a7ae-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/d4d4a7ae743926d62b6c2008741d8d91573ce560.nq.gz
+[2026-10-01T07:18:57Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-10-01T07:19:22Z] [iter=1] AST store loaded triples=3103612 load_secs=24 mem_mb=928 MB
+[2026-10-01T07:19:22Z] [iter=1] Step 2: Finding LSP targets mem_mb=928 MB
+[2026-10-01T07:19:28Z] [iter=1] LSP targets found call_sites=26561 imports=1500 extends=4 implements=273 secs=6
+[2026-10-01T07:19:33Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=928 MB
+[2026-10-01T07:19:49Z] [iter=1] Position index built positions=211578 nodes_with_types=262701 secs=17 mem_mb=928 MB
+[2026-10-01T07:19:49Z] [iter=1] Step 3: Starting LSP resolution mem_mb=928 MB already_completed_types=[] already_completed_files=0
+[2026-10-01T07:19:49Z] [iter=1] Resolving target type target_type=call_site count=26561
+[2026-10-01T07:24:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.8 files_done=0 resolved=0 errors=0 current=relay-event-schema/src/protocol/contexts/chromium_stability_report.rs
+[2026-10-01T07:25:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.8 files_done=1 resolved=34 errors=1 current=relay-metrics/src/aggregator/inner.rs
+[2026-10-01T07:28:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.9 files_done=2 resolved=188 errors=86 current=relay-event-normalization/src/schema.rs
+[2026-10-01T07:29:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.9 files_done=3 resolved=449 errors=128 current=relay-otel/src/lib.rs
+[2026-10-01T07:30:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.5 files_done=5 resolved=593 errors=152 current=relay-event-schema/src/protocol/contexts/trace.rs
+[2026-10-01T07:31:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.1 files_done=7 resolved=857 errors=173 current=relay-event-schema/src/protocol/user.rs
+[2026-10-01T07:31:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.8 files_done=13 resolved=1306 errors=203 current=relay-event-schema/src/protocol/contexts/response.rs
+[2026-10-01T07:34:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=15.4 files_done=15 resolved=1542 errors=320 current=relay-server/src/services/buffer/envelope_buffer/mod.rs
+[2026-10-01T07:36:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=17.5 files_done=16 resolved=1752 errors=410 current=relay-event-normalization/src/normalize/span/ai.rs
+[2026-10-01T07:37:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=18.8 files_done=17 resolved=1979 errors=468 current=relay-event-normalization/src/normalize/utils.rs
+[2026-10-01T07:38:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=19.3 files_done=20 resolved=2304 errors=489 current=relay-pii/src/attachments.rs
+[2026-10-01T07:39:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=20.9 files_done=21 resolved=2520 errors=554 current=tools/bench-buffer/src/main.rs
+[2026-10-01T07:40:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=22.0 files_done=24 resolved=2800 errors=593 current=relay-server/src/services/processor.rs
+[2026-10-01T07:45:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.1 files_done=25 resolved=3451 errors=774 current=relay-base-schema/src/metrics/units.rs
+[2026-10-01T07:46:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.1 files_done=26 resolved=3490 errors=820 current=relay-event-normalization/src/trimming.rs
+[2026-10-01T07:47:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.1 files_done=27 resolved=3917 errors=861 current=relay-event-schema/src/protocol/debugmeta.rs
+[2026-10-01T07:47:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=28.9 files_done=28 resolved=4196 errors=895 current=relay-server/src/services/upstream.rs
+[2026-10-01T07:50:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=31.1 files_done=29 resolved=4399 errors=995 current=relay-event-normalization/src/event.rs
+[2026-10-01T07:55:01Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=36.1 files_done=30 resolved=5313 errors=1214 current=relay-dynamic-config/src/metrics.rs
+[2026-10-01T07:55:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=36.8 files_done=32 resolved=5457 errors=1248 current=relay-server/src/metrics_extraction/generic.rs
+[2026-10-01T07:56:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.7 files_done=33 resolved=5536 errors=1286 current=relay-server/src/metrics_extraction/event.rs
+[2026-10-01T07:58:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=39.1 files_done=35 resolved=5657 errors=1350 current=relay-server/src/services/buffer/testutils.rs
+[2026-10-01T07:58:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=40.0 files_done=38 resolved=5856 errors=1384 current=relay-pattern/src/wildmatch.rs
+[2026-10-01T08:02:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=43.8 files_done=39 resolved=6056 errors=1555 current=relay-pii/src/convert.rs
+[2026-10-01T08:04:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=46.0 files_done=40 resolved=6630 errors=1650 current=relay-event-normalization/src/eap/mod.rs
+[2026-10-01T08:05:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=47.0 files_done=41 resolved=6914 errors=1697 current=relay-metrics/benches/benches.rs
+[2026-10-01T08:09:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=50.6 files_done=43 resolved=7073 errors=1853 current=relay-spans/src/v2_to_v1.rs
+[2026-10-01T08:10:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=51.3 files_done=44 resolved=7329 errors=1887 current=relay-quotas/src/cache.rs
+[2026-10-01T08:10:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=52.0 files_done=47 resolved=7386 errors=1914 current=relay-event-normalization/src/eap/trimming.rs
+[2026-10-01T08:11:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=52.7 files_done=48 resolved=7629 errors=1948 current=relay-filter/src/generic.rs
+[2026-10-01T08:13:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=54.2 files_done=49 resolved=7744 errors=2013 current=relay-filter/src/csp.rs
+[2026-10-01T08:13:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=54.9 files_done=50 resolved=7908 errors=2046 current=relay-server/benches/benches.rs
+[2026-10-01T08:14:30Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=55.6 files_done=51 resolved=8050 errors=2074 current=relay-event-normalization/src/normalize/span/exclusive_time.rs
+[2026-10-01T08:15:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=56.1 files_done=52 resolved=8184 errors=2098 current=relay-protocol/tests/test_derive.rs
+[2026-10-01T08:15:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=56.6 files_done=54 resolved=8481 errors=2121 current=relay-server/src/endpoints/common.rs
+[2026-10-01T08:16:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=57.5 files_done=55 resolved=8589 errors=2161 current=relay-server/src/managed/managed.rs
+[2026-10-01T08:19:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=60.4 files_done=56 resolved=8749 errors=2287 current=relay-redis/src/pool.rs
+[2026-10-01T08:21:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=62.4 files_done=58 resolved=9110 errors=2378 current=relay-dynamic-config/src/trusted_relay.rs
+[2026-10-01T08:22:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=63.1 files_done=60 resolved=9216 errors=2408 current=relay-server/src/utils/tus.rs
+[2026-10-01T08:22:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=63.8 files_done=61 resolved=9350 errors=2437 current=relay-event-schema/src/protocol/measurements.rs
+[2026-10-01T08:23:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=64.4 files_done=64 resolved=9529 errors=2464 current=relay-server/src/utils/memory.rs
+[2026-10-01T08:23:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=65.0 files_done=65 resolved=9583 errors=2489 current=relay-event-normalization/src/eap/trace_metric.rs
+[2026-10-01T08:25:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=66.1 files_done=68 resolved=9745 errors=2540 current=relay-server/src/processing/logs/process.rs
+[2026-10-01T08:25:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=66.7 files_done=69 resolved=9802 errors=2566 current=relay-event-normalization/src/normalize/nel.rs
+[2026-10-01T08:26:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=67.3 files_done=70 resolved=9906 errors=2593 current=relay-server/src/processing/transactions/extraction.rs
+[2026-10-01T08:28:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=69.3 files_done=72 resolved=10367 errors=2679 current=relay-event-schema/src/protocol/stacktrace.rs
+[2026-10-01T08:28:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=70.0 files_done=75 resolved=10641 errors=2710 current=relay-event-schema/src/protocol/span/convert.rs
+[2026-10-01T08:29:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=70.5 files_done=77 resolved=10812 errors=2734 current=relay-event-normalization/src/event_error.rs
+[2026-10-01T08:30:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.1 files_done=81 resolved=11112 errors=2759 current=relay-server/src/utils/native.rs
+[2026-10-01T08:30:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=72.0 files_done=83 resolved=11250 errors=2798 current=relay-server/src/processing/errors/errors/nswitch.rs
+[2026-10-01T08:31:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=72.5 files_done=84 resolved=11312 errors=2822 current=relay-server/src/utils/error.rs
+[2026-10-01T08:32:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=73.4 files_done=86 resolved=11469 errors=2860 current=relay-server/src/utils/dynamic_sampling.rs
+[2026-10-01T08:32:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=74.0 files_done=89 resolved=11607 errors=2887 current=relay-spans/src/name.rs
+[2026-10-01T08:33:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=74.6 files_done=91 resolved=11762 errors=2916 current=relay-event-schema/src/protocol/device_class.rs
+[2026-10-01T08:34:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=75.4 files_done=94 resolved=12143 errors=2952 current=relay-event-schema/src/protocol/breakdowns.rs
+[2026-10-01T08:35:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=76.5 files_done=99 resolved=12409 errors=3001 current=relay-server/src/processing/logs/store.rs
+[2026-10-01T08:36:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=77.6 files_done=101 resolved=12697 errors=3049 current=relay-server/src/services/projects/source/mod.rs
+[2026-10-01T08:37:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=78.1 files_done=104 resolved=12803 errors=3073 current=tools/process-event/src/main.rs
+[2026-10-01T08:38:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=79.3 files_done=109 resolved=13005 errors=3124 current=relay-event-normalization/src/geo.rs
+[2026-10-01T08:39:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=80.3 files_done=113 resolved=13145 errors=3168 current=relay-server/src/processing/transactions/types/output.rs
+[2026-10-01T08:39:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=81.0 files_done=122 resolved=13370 errors=3198 current=tools/document-pii/src/main.rs
+[2026-10-01T08:40:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=81.5 files_done=123 resolved=13423 errors=3221 current=relay-ourlogs/src/vercel_to_sentry.rs
+[2026-10-01T08:41:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=82.7 files_done=124 resolved=13529 errors=3272 current=relay-ffi/tests/test_macro.rs
+[2026-10-01T08:42:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=83.2 files_done=128 resolved=13637 errors=3296 current=relay-server/src/processing/transactions/process.rs
+[2026-10-01T08:43:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=84.4 files_done=129 resolved=13699 errors=3350 current=relay-common/src/glob2.rs
+[2026-10-01T08:44:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=85.3 files_done=130 resolved=13770 errors=3388 current=relay-server/src/services/global_config.rs
+[2026-10-01T08:44:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=85.9 files_done=131 resolved=13862 errors=3413 current=relay-server/src/processing/errors/errors/security.rs
+[2026-10-01T08:45:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=86.7 files_done=136 resolved=13948 errors=3451 current=relay-server/src/processing/user_reports/mod.rs
+[2026-10-01T08:46:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=87.3 files_done=140 resolved=14102 errors=3477 current=relay-base-schema/src/data_category.rs
+[2026-10-01T08:46:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=87.9 files_done=144 resolved=14298 errors=3503 current=relay-log/build.rs
+[2026-10-01T08:47:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=88.8 files_done=150 resolved=14578 errors=3540 current=relay-server/src/services/buffer/stack_provider/mod.rs
+[2026-10-01T08:48:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=89.5 files_done=156 resolved=14724 errors=3569 current=relay-server/src/processing/trace_attachments/mod.rs
+[2026-10-01T08:49:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=90.3 files_done=159 resolved=14821 errors=3603 current=relay-dynamic-config/src/project.rs
+[2026-10-01T08:49:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=91.0 files_done=164 resolved=14972 errors=3632 current=relay-server/src/processing/client_reports/validate.rs
+[2026-10-01T08:50:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=91.8 files_done=168 resolved=15053 errors=3668 current=tools/document-pii/src/item_collector.rs
+[2026-10-01T08:51:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=92.4 files_done=174 resolved=15241 errors=3695 current=relay-server/src/metrics/bucket_encoding.rs
+[2026-10-01T08:52:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=93.1 files_done=180 resolved=15345 errors=3726 current=tools/scrub-minidump/src/main.rs
+[2026-10-01T08:52:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=94.0 files_done=183 resolved=15371 errors=3766 current=relay-threading/src/pool.rs
+[2026-10-01T08:53:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=94.7 files_done=184 resolved=15457 errors=3800 current=relay-server/src/middlewares/normalize_path.rs
+[2026-10-01T08:54:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=95.3 files_done=187 resolved=15567 errors=3821 current=relay-server/src/services/stats.rs
+[2026-10-01T08:54:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=95.8 files_done=195 resolved=15705 errors=3844 current=relay-log/src/test.rs
+[2026-10-01T08:55:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=96.3 files_done=201 resolved=15791 errors=3867 current=relay-server/src/processing/errors/errors/minidump.rs
+[2026-10-01T08:55:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=96.9 files_done=205 resolved=15830 errors=3889 current=relay-server/src/processing/errors/dynamic_sampling.rs
+[2026-10-01T08:56:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=97.4 files_done=213 resolved=15927 errors=3910 current=relay-dynamic-config/src/global.rs
+[2026-10-01T08:56:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=97.9 files_done=227 resolved=16130 errors=3934 current=relay-filter/src/client_ips.rs
+[2026-10-01T08:57:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=98.5 files_done=241 resolved=16206 errors=3956 current=relay-filter/src/common.rs
+[2026-10-01T08:57:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=99.0 files_done=248 resolved=16235 errors=3974 current=tests/integration/test_upload.py
+[2026-10-01T09:00:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=101.7 files_done=250 resolved=16320 errors=4079 current=tests/integration/test_filters.py
+[2026-10-01T09:01:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=102.3 files_done=251 resolved=16347 errors=4105 current=tests/integration/test_span_links.py
+[2026-10-01T09:02:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=103.1 files_done=255 resolved=16399 errors=4134 current=tests/integration/test_metrics_encoding.py
+[2026-10-01T09:03:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=104.2 files_done=257 resolved=16419 errors=4179 current=tests/integration/test_envelope.py
+[2026-10-01T09:03:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=104.8 files_done=258 resolved=16439 errors=4203 current=scripts/git-archive-all
+[2026-10-01T09:04:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=105.4 files_done=259 resolved=16549 errors=4226 current=tests/integration/test_spans_standalone.py
+[2026-10-01T09:04:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=106.0 files_done=261 resolved=16564 errors=4251 current=tests/integration/test_ephemeral_config.py
+[2026-10-01T09:06:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=107.4 files_done=263 resolved=16611 errors=4304 current=tests/integration/test_feedback.py
+[2026-10-01T09:06:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=108.0 files_done=266 resolved=16651 errors=4328 current=tests/integration/test_query.py
+[2026-10-01T09:08:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=109.8 files_done=268 resolved=16735 errors=4404 current=tests/integration/test_sessions_eap.py
+[2026-10-01T09:09:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=110.4 files_done=273 resolved=16757 errors=4428 current=py/sentry_relay/__init__.py
+[2026-10-01T09:10:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=111.1 files_done=280 resolved=16787 errors=4451 current=gocd/templates/bash/deploy-processing-canary.sh
+[2026-10-01T09:10:23Z] [iter=1] Target type resolved target_type=call_site resolved=16813 errors=4463 secs=6634 mem_mb=928 MB
+[2026-10-01T09:10:23Z] [iter=1] Resolving target type target_type=import_statement count=1500
+[2026-10-01T09:10:46Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=111.8 files_done=1 resolved=9 errors=0 current=relay-event-normalization/src/transactions/processor.rs
+[2026-10-01T09:11:16Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=112.3 files_done=126 resolved=881 errors=0 current=relay/src/main.rs
+[2026-10-01T09:11:27Z] [iter=1] Target type resolved target_type=import_statement resolved=1356 errors=0 secs=64 mem_mb=928 MB
+[2026-10-01T09:11:27Z] [iter=1] Resolving target type target_type=extends_clause count=4
+[2026-10-01T09:11:29Z] [iter=1] Target type resolved target_type=extends_clause resolved=4 errors=0 secs=1 mem_mb=928 MB
+[2026-10-01T09:11:29Z] [iter=1] Resolving target type target_type=implements_clause count=273
+[2026-10-01T09:11:53Z] [iter=1] HEARTBEAT target_type=implements_clause elapsed_min=112.9 files_done=1 resolved=2 errors=0 current=relay-server/src/processing/mod.rs
+[2026-10-01T09:12:12Z] [iter=1] Target type resolved target_type=implements_clause resolved=259 errors=0 secs=43 mem_mb=928 MB
+[2026-10-01T09:13:22Z] [iter=1] Step 5: Writing final enrichment file triples=225590
+[2026-10-01T09:13:25Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/d4d4a7ae743926d62b6c2008741d8d91573ce560.nq.gz size_kb=5704
+[2026-10-01T09:13:25Z] [iter=1] PHASE END: enrich elapsed_s=6868 elapsed_min=114.5 total_triples=225590
