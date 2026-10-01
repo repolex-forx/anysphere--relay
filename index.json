@@ -1,0 +1,11 @@
+{
+  "org": "anysphere",
+  "repo": "relay",
+  "versions": [
+    {
+      "commit": "d4d4a7ae743926d62b6c2008741d8d91573ce560",
+      "tag": "master",
+      "parsed_at": "2026-10-01T09:22:41.828974+00:00"
+    }
+  ]
+}
