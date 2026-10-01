@@ -1511,7 +1511,9 @@
           "source": "lsp",
           "install_path": "/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tower-0.5.2/src/lib.rs"
         }
-      ]
+      ],
+      "repolex": "aggregate/repolex/d4d4a7ae743926d62b6c2008741d8d91573ce560/chunk-001.nq.gz",
+      "dep": "dep/d4d4a7ae743926d62b6c2008741d8d91573ce560.nq.gz"
     }
   ],
   "commit": "commit/commit.nq.gz",
